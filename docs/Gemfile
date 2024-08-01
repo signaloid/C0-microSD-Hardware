@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+gem "jekyll-remote-theme"
+gem "jekyll-seo-tag"
+gem "rake"
+gem 'jekyll-relative-links'
+gem 'jekyll-include-cache'
+
+group :jekyll_plugins do
+        gem "jekyll-tabs"
+      end

@@ -1,0 +1,45 @@
+title: "Signaloid C0-microSD Documentation"
+url: "https://c0-microsd-docs.signaloid.dev"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
+  - jekyll-tabs
+remote_theme: pmarsceill/just-the-docs
+logo: "/assets/images/signaloid-logo-v4.0-white-green-160.png"
+search_enabled: true
+description: "Signaloid C0-microSD documentation and examples."
+footer_content: "Copyright &copy; 2020-2024 Signaloid."
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
+
+callouts_level: quiet # or loud
+callouts:
+  # highlight:
+  #   color: yellow
+  # important:
+  #   title: Important
+  #   color: blue
+  # new:
+  #   title: New
+  #   color: green
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: red
+
+color_scheme: signaloid
+collections:
+  projects:
+    output: true
+relative_links:
+  enabled:     true
+  collections: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "C0-microSD on GitHub":
+    - "https://github.com/signaloid/C0-microSD-hardware"
+  "CrowdSupply Campaign":
+    - "https://www.crowdsupply.com/signaloid/signaloid-c0-microsd"

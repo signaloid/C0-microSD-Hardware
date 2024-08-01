@@ -20,13 +20,13 @@
 #	SOFTWARE.
 #
 
-TOOLKIT				= bash ../../submodules/C0-microSD-utilities/C0-microSD-toolkit.sh 
+TOOLKIT				= python3 ../../submodules/C0-microSD-utilities/C0_microSD_toolkit.py
 DEVICE				= /dev/disk4
 
 DESIGN				= top
 DESIGN_SOURCE_FILES		= debounce.v
 
-PCF				= pinout-C0-uSD-rev2.pcf
+PCF				= pinout.pcf
 
 ICE40_VARIANT			= up5k
 ICE40_PACKAGE			= uwg30
@@ -45,11 +45,11 @@ $(DESIGN): $(DESIGN).v $(DESIGN_SOURCE_FILES)
 	icepack $(DESIGN).asc $(DESIGN).bin
 	icetime -m -d $(ICE40_VARIANT) -P $(ICE40_PACKAGE)  -p $(PCF) $(DESIGN).asc
 
-program:
+flash:
 	sudo $(TOOLKIT) -t $(DEVICE) -b $(DESIGN).bin
 
-flashinstall:
-	iceprog $(ICEPROG_FLASH_FLAGS) $(DESIGN).bin
+switch:
+	sudo $(TOOLKIT) -t $(DEVICE) -s
 
 clean:
 	rm -f $(DESIGN).blif $(DESIGN).json $(DESIGN).bin $(DESIGN).asc $(DESIGN).vcd dfu

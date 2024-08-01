@@ -55,7 +55,13 @@ dkms.conf
 .AppleDouble
 .LSOverride
 .DS_Store
+Thumbs.db
 .vscode
 
 # Thumbnails
 ._*
+
+# Jekyll
+docs/_site/
+docs/.jekyll-cache/
+docs/Gemfile.lock

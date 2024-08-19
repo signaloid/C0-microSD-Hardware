@@ -8,7 +8,7 @@ This design alternatively blinks the red and green LEDs.
 - Verify the device path at which the Signaloid C0-microSD device shows up in your operating system. In our example, the Signaloid C0-microSD device path is `/dev/disk4`.
 - Verify that the device is in `Bootloader` mode (solid red LED).
   - In case the device is not in `Bootloader` mode, you can switch its operation mode by running `make make flash DEVICE=<device-path>` and power-cycling the device.
-- Run `make flash DEVICE=<device-path>`. Make sure to replace the `<device-path>` with the correct path of the C0-microSD. For example, if the device path is `/dev/disk4`, you will need to run `make program DEVICE=/dev/disk4`.
+- Run `make flash DEVICE=<device-path>`. Make sure to replace the `<device-path>` with the correct path of the C0-microSD. For example, if the device path is `/dev/disk4`, you will need to run `make flash DEVICE=/dev/disk4`.
 
 
 If the bitstream flashed successfully, you should see:

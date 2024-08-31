@@ -1,6 +1,6 @@
 # Synthesized FPGA configuration bitstreams:
 `bootloader.bin`: Bootloader bitstream
-`signaloid-soc.bin`: Signaloid Core bitstream
+`signaloid-soc.bin`: Signaloid Soc bitstream
 `blink.bin`: Simple design that alternatively blinks the onboard LEDs
 
 ## Using the Makefile:

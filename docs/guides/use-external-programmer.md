@@ -9,7 +9,7 @@ nav_order: 4
 You can flash the C0-microSD on-board SPI flash chip using an external programmer, and the `iceprog` toolkit, which is part of the [Icestorm](https://github.com/YosysHQ/icestorm) suite. This example uses the [Tigard](https://github.com/tigard-tools/tigard) board, which can interface with SPI ports that operate at `1.8V` and is compatible with the `iceprog` toolkit.
 
 {: .warning }
-> Do not attempt to manually flash the C0-microSD using an external programmer unless you know what you are doing. Overriding the Bootloader bitstream, the Signaloid Core bitstream, or the first 512 KiB of the non-volatile memory may disable the bootloader and SD interface of the C0-microSD. Nevertheless, this method can be used to re-flash the Bootloader and Signaloid Core in case they are corrupted, and bring the device to its initial state. You can find the official C0-microSD configuration bitstreams [here](https://github.com/signaloid/C0-microSD-hardware) 
+> Do not attempt to manually flash the C0-microSD using an external programmer unless you know what you are doing. Overriding the Bootloader bitstream, the Signaloid SoC bitstream, or the first 512 KiB of the non-volatile memory may disable the bootloader and SD interface of the C0-microSD. Nevertheless, this method can be used to re-flash the Bootloader and Signaloid SoC in case they are corrupted, and bring the device to its initial state. You can find the official C0-microSD configuration bitstreams [here](https://github.com/signaloid/C0-microSD-hardware) 
 
 1. Make sure that the `Tigard` board is configured correctly, with the `Target` switch set to `1.8V` and the `Mode` switch set to `JTAG/SPI` (Figure 1).
 

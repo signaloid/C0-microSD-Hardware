@@ -1,14 +1,14 @@
 ---
 layout: default
 grand_parent: "Hardware Overview"
-parent: "Signaloid Core"
+parent: "Signaloid SoC"
 
 title: "Communication Scheme"
 nav_order: 1
 ---
 
-# Signaloid Core Communication Scheme
-Communication between the device application that runs on the Signaloid Core, and the host application that runs on the host device, is achieved over the SD interface via block read and write commands. Specifically, the Signaloid Core supports control and status registers, as well as data buffers, for communication with the host device, which are exposed in the Signaloid Core as memory-mapped I/O (MMIO). Following are the memory addresses used by the device application to access them:
+# Signaloid SoC Communication Scheme
+Communication between the device application that runs on the Signaloid SoC, and the host application that runs on the host device, is achieved over the SD interface via block read and write commands. Specifically, the Signaloid SoC supports control and status registers, as well as data buffers, for communication with the host device, which are exposed in the Signaloid SoC as memory-mapped I/O (MMIO). Following are the memory addresses used by the device application to access them:
 
 ## MMIO Communication registers
 
@@ -32,7 +32,7 @@ This register is set by the device application to control SoC peripherals, and c
 | 0            | Set onboard red LED   |
 
 ### `command` register
-This register can be set by the host application, and read by the device application. It is used for sending commands to the Signaloid Core.
+This register can be set by the host application, and read by the device application. It is used for sending commands to the Signaloid SoC.
 
 {: .note }
 > The specific values of the `command` and `status` registers for communication between the host and the device are application dependent.
@@ -73,7 +73,7 @@ main(void)
 ```
 
 ## SD interface addressing
-Following are the address offsets for communication with the C0-microSD over the SD interface while in **Signaloid Core** mode.
+Following are the address offsets for communication with the C0-microSD over the SD interface while in **Signaloid SoC** mode.
 
 | Address space                 | Address Start | Size    | Host Operation | Description                       |
 | ----------------------------- | ------------- | ------- | -------------- | --------------------------------- |
@@ -94,13 +94,13 @@ Additionally, the following address offsets allow the host device to verify the 
 
 
 ### `CONFIGURATION_ID_OFFSET`
-This 4-byte word stores the ID of the active configuration (in this case the Signaloid Core). The toolkit uses the ID to identify the active mode of operation of the C0-microSD.
+This 4-byte word stores the ID of the active configuration (in this case the Signaloid SoC). The toolkit uses the ID to identify the active mode of operation of the C0-microSD.
 
 ### `CONFIGURATION_VERSION_OFFSET`
-This 4-byte word stores the current version of the active configuration (in this case the Signaloid Core). 
+This 4-byte word stores the current version of the active configuration (in this case the Signaloid SoC). 
 
 ### `CONFIGURATION_STATE_OFFSET`
-This 4-byte word stores the current state of the active configuration (in this case the Signaloid Core). Currently, the toolkit uses this value to verify whether the C0-microSD is in `SWITCHING` state.
+This 4-byte word stores the current state of the active configuration (in this case the Signaloid SoC). Currently, the toolkit uses this value to verify whether the C0-microSD is in `SWITCHING` state.
 
 ### `BOOTLOADER_SWITCH_CONFIG_OFFSET`
 This offset is used for switching between operation modes. To achieve this, you can write the 4-byte word `SBLD` (ASCII Encoded) to this offset.

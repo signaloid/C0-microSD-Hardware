@@ -16,7 +16,7 @@ You can use the `C0_microSD_toolkit.py`, which you can find [here](https://githu
 
 ## Using the `C0_microSD_toolkit.py` tool
 You can use the `C0_microSD_toolkit.py` Python script to configure the C0-microSD and flash new
-firmware. The script is written and tested in Python 3.11 on MacOS 14.5 and does not use any
+firmware. The script is written and tested in Python 3.11 on macOS 14.5 and does not use any
 additional libraries. Following are the program's command-line arguments and usage examples:
 
 ```
@@ -30,7 +30,7 @@ options:
   -b INPUT_FILE     Specify the input file for flashing (required with -u, -q, or -w).
   -u                Flash user data.
   -q                Flash new Bootloader bitstream.
-  -w                Flash new Signaloid Core bitstream.
+  -w                Flash new Signaloid SoC bitstream.
   -s                Switch boot mode.
   -i                Print target C0-microSD information, and run data verification.
   -f                Force flash sequence (do not check for bootloader).
@@ -57,7 +57,7 @@ Flash new Bootloader bitstream:
 sudo python3 ./C0_microSD_toolkit.py -t /dev/sda -b bootloader-bitstream.bin -q
 ```
 
-Flash new Signaloid Core bitstream:
+Flash new Signaloid SoC bitstream:
 ```sh
 sudo python3 ./C0_microSD_toolkit.py -t /dev/sda -b signaloid-soc.bin -w
 ```

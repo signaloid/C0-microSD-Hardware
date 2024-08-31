@@ -4,11 +4,11 @@ The **Signaloid C0-microSD** has two main use cases: You can either **(1) use it
 ![C0-microSD front back](docs/assets/images/C0-microSD-front-back.jpeg)
 
 ## Repository Submodules
-A companion repository for the hardware module's [bootloader utilities](https://github.com/signaloid/C0-microSD-utilities/), included as a submodule, contains utilities for interacting with the bootloader, and libraries for building your own applications for the built-in Signaloid Core.
+A companion repository for the hardware module's [bootloader utilities](https://github.com/signaloid/C0-microSD-utilities/), included as a submodule, contains utilities for interacting with the bootloader, and libraries for building your own applications for the built-in Signaloid Soc.
 
 ## Repository Structure
-- The `examples/` folder contains example applications that run on the built Signaloid Core of the device.
-- The `bin/` folder contains the latest `Bootloader` and `Signaloid Core` bitstreams for your C0-microSD, as well as a pre-synthesized blink example.
+- The `examples/` folder contains example applications that run on the built Signaloid Soc of the device.
+- The `bin/` folder contains the latest `Bootloader` and `Signaloid Soc` bitstreams for your C0-microSD, as well as a pre-synthesized blink example.
 - The `docs/` folder contains the documentation of the C0-microSD.
 
 ## Cloning the Repository 
@@ -29,4 +29,6 @@ git submodule update --init --recursive
 ## Documentation
 You can find the latest documentation for the Signaloid C0-microSD [here](https://c0-microsd-docs.signaloid.io/).
 
+## Compatibility
+For host controllers and adapters known to be compatible with the Signaloid C0-microSD SoM, please see [the compatibility section](https://c0-microsd-docs.signaloid.io/hardware-overview/compatibility.html) of the documentation.
 

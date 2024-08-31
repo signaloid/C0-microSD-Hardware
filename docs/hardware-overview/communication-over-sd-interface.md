@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 # Communication over the SD Interface
-The C0-microSD is designed to communicate with host devices over the SD interface. When connected to a host computer, the device presents itself as a 20.2 MB (19.3 MiB) unformatted block storage device. All communication is achieved with block read and write operations which the host initiates. This is true both when the device is in **Bootloader** mode, or in **Signaloid Core** mode.
+The C0-microSD is designed to communicate with host devices over the SD interface. When connected to a host computer, the device presents itself as a 20.2 MB (19.3 MiB) unformatted block storage device. All communication is achieved with block read and write operations which the host initiates. This is true both when the device is in **Bootloader** mode, or in **Signaloid SoC** mode.
 
 {: .note }
 > The communication over the SD interface is done using block read and write operations, and not an [SDIO extension](https://www.sdcard.org/developers/sd-standard-overview/sdio-isdio/) of the SD interface.
@@ -24,8 +24,8 @@ In this example, the C0-microSD is in **Bootloader** mode, and connected to a ho
 
 In the example above, the `seek` argument is calculated by taking the decimal representation of the `USER_BITSTREAM_OFFSET` (see /hardware-overview/bootloader-addresssing.html), and dividing it by the block size (`bs = 512`). For all the bootloader operations you can use the `C0_microSD_toolkit.py` script that you can find [here](https://github.com/signaloid/C0-microSD-utilities).
 
-## Signaloid Core communication example
-In this example, the C0-microSD is in **Signaloid Core** mode, and connected to a host computer that runs macOS. We assume that the device is located in `/dev/disk4/`. Here, we communicate with the C0-microSD using a C host application to set the `command` register to `0x00000001`.
+## Signaloid SoC communication example
+In this example, the C0-microSD is in **Signaloid SoC** mode, and connected to a host computer that runs macOS. We assume that the device is located in `/dev/disk4/`. Here, we communicate with the C0-microSD using a C host application to set the `command` register to `0x00000001`.
 
 ```c
 #include <stdio.h>
@@ -75,4 +75,4 @@ main(void)
 }
 ```
 
-The `commandRegisterOffset` is determined based on the Signaloid Core [communication scheme](/hardware-overview/signaloid-core/communication-scheme.html) specifications. You can find header files and helper functions for building your own C and Python based host applications [here](https://github.com/signaloid/C0-microSD-utilities?tab=readme-ov-file#using-the-c0_microsd_toolkitpy-tool).
+The `commandRegisterOffset` is determined based on the Signaloid SoC [communication scheme](/hardware-overview/signaloid-core/communication-scheme.html) specifications. You can find header files and helper functions for building your own C and Python based host applications [here](https://github.com/signaloid/C0-microSD-utilities?tab=readme-ov-file#using-the-c0_microsd_toolkitpy-tool).

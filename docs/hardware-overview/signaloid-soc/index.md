@@ -32,7 +32,7 @@ The Signaloid SoC is based on the open-source [PicoRV32](https://github.com/Yosy
 | RV32I |        12MHz        |      128KiB      |
 
 ## Developing applications for the Signaloid SoC
-The Signaloid SoC can run custom user code (device application), and work in conjunction with an application that runs on the host machine (host application). The host application is responsible for communicating with the device application over the SD interface, via block read and write operations. You can find more details on the Signaloid SoC communication scheme [here](/hardware-overview/signaloid-core/communication-scheme.html).
+The Signaloid SoC can run custom user code (device application), and work in conjunction with an application that runs on the host machine (host application). The host application is responsible for communicating with the device application over the SD interface, via block read and write operations. You can find more details on the Signaloid SoC communication scheme [here](/hardware-overview/signaloid-soc/communication-scheme.html).
 
 You can use the [official RISC-V GNU toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain) to compile and run your applications on the Signaloid SoC. We provide example C applications that use the Signaloid SoC, along with host applications and instructions on how to compile them [here](https://github.com/signaloid/C0-microSD-Hardware).
 

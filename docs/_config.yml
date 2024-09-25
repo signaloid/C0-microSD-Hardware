@@ -1,5 +1,5 @@
 title: "Signaloid C0-microSD Documentation"
-url: "https://c0-microsd-docs.signaloid.io"
+url: "https://c0-microsd-docs.signaloid.dev"
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links
@@ -43,3 +43,6 @@ aux_links:
     - "https://github.com/signaloid/C0-microSD-hardware"
   "CrowdSupply Campaign":
     - "https://www.crowdsupply.com/signaloid/signaloid-c0-microsd"
+
+# Google Analytics
+google_analytics: G-DHFBH8X194

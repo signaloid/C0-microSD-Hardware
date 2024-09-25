@@ -75,4 +75,4 @@ main(void)
 }
 ```
 
-The `commandRegisterOffset` is determined based on the Signaloid SoC [communication scheme](/hardware-overview/signaloid-core/communication-scheme.html) specifications. You can find header files and helper functions for building your own C and Python based host applications [here](https://github.com/signaloid/C0-microSD-utilities?tab=readme-ov-file#using-the-c0_microsd_toolkitpy-tool).
+The `commandRegisterOffset` is determined based on the Signaloid SoC [communication scheme](/hardware-overview/signaloid-soc/communication-scheme.html) specifications. You can find header files and helper functions for building your own C and Python based host applications [here](https://github.com/signaloid/C0-microSD-utilities?tab=readme-ov-file#using-the-c0_microsd_toolkitpy-tool).

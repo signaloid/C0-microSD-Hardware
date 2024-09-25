@@ -13,6 +13,7 @@ You can use the `C0_microSD_toolkit.py`, which you can find [here](https://githu
 3. Verify that the C0-microSD is in **Bootloader** mode (solid red LED). If not, switch to **Bootloader** mode and power-cycle the device. You can find more details on how to switch the operation mode of your C0-microSD [here](/guides/identify-c0-microsd.html).
 4. Flash new firmware/data to the device using the `C0_microSD_toolkit.py` python script. While the flashing operation takes place, you should see the green LED of the C0-microSD blink rapidly.
 
+MicroSD to SD card adapters often have a small switch on the side, check that the switch is in the position that allows writing to the C0-microSD. If the switch is not in the correct position, you will encounter a permission error when attempting to flash the bitstream.
 
 ## Using the `C0_microSD_toolkit.py` tool
 You can use the `C0_microSD_toolkit.py` Python script to configure the C0-microSD and flash new

@@ -22,7 +22,7 @@ You can use the `C0_microSD_toolkit.py`, which you can find [here](https://githu
 
 4. Run `sudo python3 ./C0_microSD_toolkit.py -t /dev/disk4 -s` to switch operation mode. If this is successful, the opposite LED of the one that is solid should start blinking (Figures 3 and 4).
 
-    | ![inserted C0-microSD switching from bootloader to signaloid core](/assets/images/macbook-animations/switching-from-bootloader-to-signaloid-core.gif) | ![inserted C0-microSD switching from signaloid core to bootloader](/assets/images/macbook-animations/switching-from-signaloid-core-to-bootloader.gif) |
+    | ![inserted C0-microSD switching from Bootloader to Signaloid SoC](/assets/images/macbook-animations/switching-from-bootloader-to-signaloid-core.gif) | ![inserted C0-microSD switching from Signaloid SoC to Bootloader](/assets/images/macbook-animations/switching-from-signaloid-core-to-bootloader.gif) |
     | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
     |                                 **Figure 3:** C0-microSD in **Bootloader** mode switching to **Signaloid Soc** mode.                                 |                                 **Figure 4:** C0-microSD in **Signaloid Soc** mode switching to **Bootloader** mode.                                 |
 
@@ -39,7 +39,7 @@ You can use the `C0_microSD_toolkit.py`, which you can find [here](https://githu
 
 5. Power-cycle the C0-microSD to load new configuration mode. This means that the LED that was previously flashing, should now be constantly on (Figures 5 and 6).
 
-    | ![power cycling from bootloader to signaloid core](/assets/images/macbook-animations/switch-from-bootloader-to-signaloid-core.gif) | ![power cycling from signaloid core to bootloader](/assets/images/macbook-animations/switch-from-signaloid-core-to-bootloader.gif) |
+    | ![power cycling from Bootloader to Signaloid SoC](/assets/images/macbook-animations/switch-from-bootloader-to-signaloid-core.gif) | ![power cycling from Signaloid SoC to Bootloader](/assets/images/macbook-animations/switch-from-signaloid-core-to-bootloader.gif) |
     | :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
     |                          **Figure 5:** Power cycling the C0-microSD to switch to **Signaloid Soc** mode.                          |                            **Figure 6:** Power cycling the C0-microSD to switch to **Bootloader** mode.                            |
 

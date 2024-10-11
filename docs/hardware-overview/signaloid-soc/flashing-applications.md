@@ -4,7 +4,7 @@ grand_parent: "Hardware Overview"
 parent: "Signaloid SoC"
 
 title: "Flashing Applications"
-nav_order: 2
+nav_order: 3
 ---
 
 # Flashing Applications to the C0-microSD

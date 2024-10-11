@@ -1,3 +1,6 @@
+.DS_Store
+.vscode
+
 # Prerequisites
 *.d
 
@@ -51,20 +54,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# General
-.AppleDouble
-.LSOverride
-.DS_Store
-Thumbs.db
-.vscode
-
-# Thumbnails
-._*
-
-# Jekyll
-docs/_site/
-docs/.jekyll-cache/
-docs/Gemfile.lock
-
-# Python
-__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class

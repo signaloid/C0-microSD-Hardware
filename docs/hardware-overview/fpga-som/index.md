@@ -13,7 +13,7 @@ When using the Signaloid C0-microSD as a hot-pluggable FPGA SoM, you can plug it
 |:--:| :--:|
 | **Figure 1:** C0-microSD populating a breadboard using a microSD breakout board. | **Figure 2:** C0-microSD connected to an existing microcontroller platform. |
 
-You can find example designs that use the on-board LEDs along with instructions on how to synthesize and load them to your device in the `examples/` directory of the [C0-microSD-Hardware](https://github.com/signaloid/C0-microSD-hardware) repository.
+You can find example designs that use the on-board LEDs along with instructions on how to synthesize and load them to your device in the `rtl-examples/` directory of the [C0-microSD-Hardware](https://github.com/signaloid/C0-microSD-hardware) repository.
 
 {: .note }
 > Using the C0-microSD as a programmable FPGA SoM does not require switching between modes of operation. You only need to set your C0-microSD in **Bootloader** mode.

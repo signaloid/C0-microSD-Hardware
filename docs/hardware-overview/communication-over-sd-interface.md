@@ -22,7 +22,7 @@ In this example, the C0-microSD is in **Bootloader** mode, and connected to a ho
 104090 bytes transferred in 1.904253 secs (54662 bytes/sec)
 ```
 
-In the example above, the `seek` argument is calculated by taking the decimal representation of the `USER_BITSTREAM_OFFSET` (see /hardware-overview/bootloader-addresssing.html), and dividing it by the block size (`bs = 512`). For all the bootloader operations you can use the `C0_microSD_toolkit.py` script that you can find [here](https://github.com/signaloid/C0-microSD-utilities).
+In the example above, the `seek` argument is calculated by taking the decimal representation of the `USER_BITSTREAM_OFFSET` (see [bootloader addressing](/hardware-overview/bootloader-addresssing.html)), and dividing it by the block size (`bs = 512`). For all the bootloader operations you can use the `C0_microSD_toolkit.py` script that you can find [here](https://github.com/signaloid/C0-microSD-utilities).
 
 ## Signaloid SoC communication example
 In this example, the C0-microSD is in **Signaloid SoC** mode, and connected to a host computer that runs macOS. We assume that the device is located in `/dev/disk4/`. Here, we communicate with the C0-microSD using a C host application to set the `command` register to `0x00000001`.

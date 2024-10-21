@@ -4,7 +4,7 @@ This is a simple [Signaloid SoC](https://c0-microsd-docs.signaloid.io/hardware-o
 Directories:
 - `signaloid-soc-application/` contains the source code for the Signaloid SoC application.
 - `host-application/` contains a C-based application that runs on the host machine and communicates with the Signaloid SoC.
-- `host-application/` contains a Python based application that runs on the host machine and communicates with the Signaloid SoC.
+- `python-host-application/` contains a Python based application that runs on the host machine and communicates with the Signaloid SoC.
 
 # How to use:
 ## Build and flash the Signaloid SoC application

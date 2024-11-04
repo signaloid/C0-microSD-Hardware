@@ -6,6 +6,7 @@ plugins:
   - jekyll-tabs
 remote_theme: pmarsceill/just-the-docs
 logo: "/assets/images/signaloid-logo-v4.0-white-green-160.png"
+favicon_ico: "/assets/images/signaloid-logo-v4.0-white-green-minimal-8.5pxPadding.png"
 search_enabled: true
 description: "Signaloid C0-microSD documentation and examples."
 footer_content: "Copyright &copy; 2020-2024 Signaloid."

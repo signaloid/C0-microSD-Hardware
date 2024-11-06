@@ -15,6 +15,7 @@ A companion repository for the hardware module's [bootloader utilities](https://
 - The `examples/` folder contains example applications that run on the built Signaloid Soc of the device.
 - The `bin/` folder contains the latest `Bootloader` and `Signaloid Soc` bitstreams for your C0-microSD, as well as a pre-synthesized blink example.
 - The `docs/` folder contains the documentation of the C0-microSD.
+- The `hardware/` folder contains the hardware schematics.
 
 ## Cloning the Repository 
 The correct way to clone this repository is:

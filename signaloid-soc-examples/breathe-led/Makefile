@@ -92,7 +92,7 @@ disassemble:
 	$(OBJDUMP) -dSl $(PROGRAM) > $(PROGRAM).dis.S
 
 flash: $(PROGRAM).bin
-	sudo $(TOOLKIT) -t $(DEVICE) -b $(PROGRAM).bin -u
+	sudo $(TOOLKIT) -t $(DEVICE) -b $(PROGRAM).bin -u -p 128K
 
 switch:
 	sudo $(TOOLKIT) -t $(DEVICE) -s

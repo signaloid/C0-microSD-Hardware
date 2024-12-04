@@ -5,6 +5,11 @@ nav_order: 1
 ---
 
 # Signaloid C0-microSD Hot-Pluggable Hardware Module
+
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1024723530?h=6ff0168018&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Signaloid C0-microSD CrowdSupply Campaign Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
 The Signaloid C0-microSD is a low-power system-on-module (SoM) containing a Lattice iCE40 FPGA and 128Mbit of flash memory in a hot-swappable module that fits into a microSD slot. The FPGA is connected to the microSD interface pins, allowing developers to configure the C0-microSD to work as an SD-compatible device, accessed from a host computer or host embedded system via the 4-wire SD protocol or via the SD-over-SPI protocol. By taking advantage of the iCE40’s functionality for dynamic reconfiguration of the FPGA with multiple alternative images, the Signaloid C0-microSD SoM implements two key features that ease development. First, we provide a pre-built bootloader configuration as a default design in the FPGA, that lets developers use the SD interface to load their own custom FPGA bitstreams. Second, the bootloader also allows developers to switch between custom FPGA bitstreams and a pre-loaded RISC-V system-on-chip (SoC); the RISC-V SoC we provide implements a subset of Signaloid’s uncertainty-tracking technology and  can load programs from the flash built into the SoM.
 
 | ![C0-microSD pinout](/assets/images/C0-microSD-pinout-horizontal.png) |

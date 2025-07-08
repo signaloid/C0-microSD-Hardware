@@ -2,7 +2,7 @@
 
 # Signaloid C0-microSD Hot-Pluggable Hardware Module
 
-https://github.com/user-attachments/assets/4cbede78-c1d1-4f11-8df5-b80840ae0913
+https://github.com/user-attachments/assets/a4350722-81a3-4944-a306-9779b2ee1173
 
 The **Signaloid C0-microSD** has two main use cases: You can either **(1) use it as a hot-pluggable co-processor module** (it implements a subset of Signaloid's C0 processor), or you can **(2) use it as a hot-pluggable FPGA module**. The Signaloid C0-microSD contains a bootloader that exposes the hardware module's functionality as a SD mass storage device, making it easy to configure new applications in either of the two use cases by performing I/O to the module when it is plugged into a host system. 
 

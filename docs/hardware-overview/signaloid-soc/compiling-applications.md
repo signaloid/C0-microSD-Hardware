@@ -25,7 +25,7 @@ This is a necessary step for macOS 14+ with Apple clang version 15.0.0 (clang-15
 
 Install `gcc-mp-13` and `g++-mp-13` using:
 ```sh
-sudo port install gcc-13
+sudo port install gcc13
 ```
 
 Set `CC` and `CXX` environment variables so that the following configure picks them up:

@@ -73,7 +73,7 @@ main(void)
 ```
 
 ## SD interface addressing
-Following are the address offsets for communication with the C0-microSD over the SD interface while in **Signaloid SoC** mode.
+The table below shows the address offsets for communication with the C0-microSD over the SD interface while in **Signaloid SoC** mode. Note that the addressing scheme for reading and writing to the MMIO buffers and registers from the SD host differs from the addressing scheme from the SoC itself. For example, when you want to write to the `command` register from your host application, the block device offset is `0x10000`, but to read the same register from your SoC application you need to access the `0x40000008` memory address.
 
 | Address space                 | Address Start | Size    | Host Operation | Description                       |
 | ----------------------------- | ------------- | ------- | -------------- | --------------------------------- |

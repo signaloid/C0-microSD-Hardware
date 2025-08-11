@@ -16,6 +16,12 @@ The Signaloid C0-microSD is a low-power system-on-module (SoM) containing a Latt
 |:--:|
 | **Figure 1:** C0-microSD pinout diagram. |
 
+## Getting started with the C0-microSD
+To get started with the C0-microSD, view the [C0-microSD quickstart guide](https://github.com/signaloid/C0-microSD-Hardware/blob/main/c0-microsd-quickstart.pdf).
+
+You can find example RTL designs, along with instructions on how to flash them in the [C0-microSD Hardware repository](https://github.com/signaloid/C0-microSD-hardware). You can also find example applications for the built-in [Signaloid SoC](https://github.com/signaloid?q=Signaloid-C0-microSD-Demo). In the documentation pages, you will find information on how the different [modes of operation](/hardware-overview/modes-of-operation.html) of the C0-microSD work, as well as instructions on how to [perform commonly-needed operations](/guides/) like identifying, switching, and flashing your C0-microSD.
+
+
 ## What The Signaloid C0-microSD System-On-Module is Useful For
 The Signaloid C0-microSD has two main use cases: You can either **(1) use it as a hot-pluggable co-processor module**, or you can **(2) use it as a hot-pluggable FPGA module**. 
 
@@ -32,6 +38,11 @@ Examples of current and possible use cases of the Signaloid C0-microSD SoM inclu
 3. Implementing bespoke hot-swappable cryptographic hardware that can be accessed from Unix as a block storage device, for use in laptops and other mobile devices with either a microSD or full-sized SD card slot that conforms to the full (4-wire) SD protocol.
 4. Augmenting hobbyist or maker projects in Arduino-compatible hardware which have a microSD card slot accessed using the SD-over-SPI protocol.
 5. Using the C0-microSD as a small and low-power microcontroller using the LiteX framework for embedded applications.
+
+We have published some open source projects in GitHub that showcase the capabilities of the C0-microSD:
+- The [Signaloid-C0-microSD-Demo-Calculator](https://github.com/signaloid/Signaloid-C0-microSD-Demo-Calculator) project showcases how you can use the Signaloid C0-microSD to execute deterministic computation on probability distributions.
+- The [Signaloid-C0-microSD-Demo-Cardputer](https://github.com/signaloid/Signaloid-C0-microSD-Demo-Cardputer) project showcases how you can integrate the Signaloid C0-microSD into existing embedded platforms with a spare microSD card slot.
+- The [Signaloid-C0-microSD-litex-I2C-demo](https://github.com/signaloid/Signaloid-C0-microSD-litex-I2C-demo) project showcases how you can use the Signaloid C0-microSD as an FPGA development board and configure it with you custom litex SoC implementation.
 
 ## Why We Created the Signaloid C0-microSD System-On-Module
 We built the first prototype of the C0-microSD SoM in 2021 for use by a commercial partner with a use case around low-power data processing within an autonomous undersea vehicle (AUV) application and a subsea data sensor for monitoring offshore wind farm assets. The picture below shows the final AUV vehicle from that commercial engagement inside a testing tank (top half of picture) and the pressurized electronics container (bottom half of picure). You can see the old version of Signaloid’s logo (“S.“) on a banner inside the tank.
@@ -56,9 +67,8 @@ When you switch the Signaloid C0-microSD SoM to **Signaloid SoC** mode, the gree
 
 You can find out more about switching between modes in the [mode guide section](/guides/switch-c0-microsd-mode).
 
-
-## Getting started with the C0-microSD
-You can find example RTL designs, along with instructions on how to flash them [here](https://github.com/signaloid/C0-microSD-hardware). You can also find example applications for the built-in Signaloid SoC [here](https://github.com/signaloid?q=Signaloid-C0-microSD-Demo). In this documentation page, you will find information on how the different [modes of operation](/hardware-overview/modes-of-operation.html) of the C0-microSD work, as well as instructions on how to [perform commonly-needed operations](/guides/) like identifying, switching, and flashing your C0-microSD.
+## C0-microSD Datasheet
+View information about the Signaloid C0-microSD in the [preliminary datasheet](https://github.com/signaloid/C0-microSD-Hardware/blob/main/c0-microsd-preliminary-datasheet.pdf).
 
 ## Compatibility
 For host controllers and adapters known to be compatible with the Signaloid C0-microSD SoM, please see [the compatibility section](/hardware-overview/compatibility.html).

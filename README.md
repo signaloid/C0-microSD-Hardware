@@ -14,7 +14,7 @@ The **Signaloid C0-microSD** has two main use cases: You can either **(1) use it
 A companion repository for the hardware module's [bootloader utilities](https://github.com/signaloid/C0-microSD-utilities/), included as a submodule, contains utilities for interacting with the bootloader, and libraries for building your own applications for the built-in Signaloid Soc.
 
 ## Repository Structure
-- The `examples/` folder contains example applications that run on the built Signaloid Soc of the device.
+- The `signaloid-soc-examples/` folder contains example applications that run on the built Signaloid Soc of the device.
 - The `bin/` folder contains the latest `Bootloader` and `Signaloid Soc` bitstreams for your C0-microSD, as well as a pre-synthesized blink example.
 - The `docs/` folder contains the documentation of the C0-microSD.
 - The `hardware/` folder contains the hardware schematics.

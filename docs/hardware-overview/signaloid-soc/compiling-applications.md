@@ -12,8 +12,8 @@ nav_order: 2
 ## Install the RISC-V GNU cross-compilation toolchain
 To compile applications for the built-in Signaloid SoC, you will require the open-source RISC-V GNU cross-compilation toolchain, that you can find [here](https://github.com/riscv-collab/riscv-gnu-toolchain). You can build the cross-compilation toolchain from source, make sure to install it for the `RV32I` instruction set.
 
->[!Note]
->At the time of writing, pre-built binaries that you can find in the [releases](https://github.com/riscv-collab/riscv-gnu-toolchain/releases) section of the cross-compilation toolchain [repository](https://github.com/riscv-collab/riscv-gnu-toolchain), **do not contain** the standard C libraries compiled for the `rv32i`/`ilp32` configuration needed for the Signaloid SoC on the C0-microSD, which, if used, will result in compilation fatal errors. Please use the build guide below to build it from source.
+{: .note }
+> At the time of writing, pre-built binaries that you can find in the [releases](https://github.com/riscv-collab/riscv-gnu-toolchain/releases) section of the cross-compilation toolchain [repository](https://github.com/riscv-collab/riscv-gnu-toolchain), **do not contain** the standard C libraries compiled for the `rv32i`/`ilp32` configuration needed for the Signaloid SoC on the C0-microSD, which, if used, will result in compilation fatal errors. Please use the build guide below to build it from source.
 
 
 ### Building from source.

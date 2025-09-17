@@ -18,7 +18,7 @@ You can use the `C0_microSD_toolkit.py`, which you can find [here](https://githu
 
     | ![inserted C0-microSD with red led on](/assets/images/macbook-animations/inserted-red-led.png) | ![inserted C0-microSD with green led on](/assets/images/macbook-animations/inserted-green-led.png) |
     | :--------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
-    |                    **Figure 1:** C0-microSD is in **Signaloid Soc** mode.                     |                        **Figure 2:** C0-microSD is in **Bootloader** mode.                         |
+    |                    **Figure 1:** C0-microSD is in **Bootloader** mode.                     |                        **Figure 2:** C0-microSD is in **Signaloid Soc** mode.                         |
 
 4. Run `sudo python3 ./C0_microSD_toolkit.py -t /dev/disk4 -s` to switch operation mode. If this is successful, the opposite LED of the one that is solid should start blinking (Figures 3 and 4).
 

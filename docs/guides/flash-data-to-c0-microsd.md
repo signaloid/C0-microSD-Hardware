@@ -34,6 +34,7 @@ options:
   -w                Flash new Signaloid SoC bitstream.
   -s                Switch boot mode.
   -i                Print target C0-microSD information, and run data verification.
+  -y                Flash warmboot sector.
   -f                Force flash sequence (do not check for bootloader).
 ```
 

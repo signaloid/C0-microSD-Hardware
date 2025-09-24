@@ -68,3 +68,8 @@ Print target C0-microSD information and verify loaded bitstreams:
 ```sh
 sudo python3 ./C0_microSD_toolkit.py -t /dev/sda -i
 ```
+
+Flash the warmboot sector with the appropriate configuration. No input file needed for this operation.
+```sh
+sudo python3 ./C0_microSD_toolkit.py -t /dev/sda -y
+```

@@ -1,5 +1,5 @@
 title: "Signaloid C0-microSD Documentation"
-url: "https://c0-microsd-docs.signaloid.dev"
+url: "https://c0-microsd-docs.signaloid.io"
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links

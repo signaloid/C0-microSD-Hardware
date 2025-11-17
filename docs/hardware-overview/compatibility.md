@@ -29,8 +29,8 @@ We have also tested the compatibility of the Signaloid C0-microSD with multiple 
 
 | Host device                                     |                                              Product Page                                              | Mechanical | SD Interface |
 | :---------------------------------------------- | :----------------------------------------------------------------------------------------------------: | :--------: | :----------: |
-| Bosch ctrlX core X3 PLC                         | [boschrexroth.com](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/portfolio/ctrlx-core/) |    Yes     |   Untested   |
-| Wago PFC100 PLC                                 |  [wago.com](https://www.wago.com/global/plcs-%E2%80%93-controllers/compact-controller-100/p/751-9301)  |    Yes     |   Untested   |
+| Bosch ctrlX core X3 PLC                         | [boschrexroth.com](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/portfolio/ctrlx-core/) |    Yes     |     Yes      |
+| Wago PFC100 PLC                                 |  [wago.com](https://www.wago.com/global/plcs-%E2%80%93-controllers/compact-controller-100/p/751-9301)  |    Yes     |     Yes      |
 | Wago PFC200 PLC                                 |           [wago.com](https://www.wago.com/global/automation-technology/discover-plcs/pfc200)           |    Yes     |   Untested   |
 | Phoenix Contact PLCNEXT PLC                     |                 [phoenixcontact.com](https://www.phoenixcontact.com/en-us/us-lp-open)                  |    Yes     |   Untested   |
 | SparkFun MicroMod AssetTracker                  |                        [sparkfun.com](https://www.sparkfun.com/products/17272)                         |    Yes     |   Untested   |

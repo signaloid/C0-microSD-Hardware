@@ -20,7 +20,7 @@ The Signaloid C0-microSD detects whether it has been plugged in an SD host, and 
 
 This behavior is achieved using the iCE40 _warmboot_ capability. The built-in **Bootloader** is always the first configuration to be loaded. Following the logic shown in Figure 1, the **Bootloader** will either stay in its current configuration, switch to the the built-in **Signaloid SoC** configuration, or load the **Custom User Bitstream**.
 
-| <img src="/assets/images/diagrams/bootloader-logic-diagram.png"> |
+| <img src="/docs/assets/images/diagrams/signaloid-external-illustration-c0-microSD-boot-order-logic-updated-withCR.png"> |
 |:--:|
 | **Figure 1:** Boot order logic. |
 
@@ -31,7 +31,7 @@ You can distinguish between the three modes of operation based on the following 
   - If the C0-microSD is in **Signaloid SoC mode**, the green LED should be constantly on (Figure 3).
 - If the C0-microSD is powered on without a host present, it will switch to **Custom User Bitstream Mode**. In this mode, the behavior of the on-board LEDs is entirely dictated by the custom user bitstream configuration.
 
-| <img style=" width: 300px" src="/assets/images/ortho-renders/small_size/C0-uSD-ortho-render-top-red-led.png"> | <img style=" width: 300px" src="/assets/images/ortho-renders/small_size/C0-uSD-ortho-render-top-green-led.png"> |
+| <img style=" width: 300px" src="/docs/assets/images/ortho-renders/normal_size/signaloid-external-illustration-C0-microSD-in-Bootloader-mode-withCR.png"> | <img style=" width: 300px" src="/docs/assets/images/ortho-renders/normal_size/signaloid-external-illustration-C0-microSD-in-Signaloid-SoC-mode-withCR.png"> |
 |:--:| :--:| 
 | **Figure 2:** C0-microSD in **Bootloader mode**. | **Figure 3:** C0-microSD in **Signaloid SoC mode**. |
 

@@ -12,7 +12,7 @@ nav_order: 1
 
 The Signaloid C0-microSD is a low-power system-on-module (SoM) containing a Lattice iCE40 FPGA and 128Mbit of flash memory in a hot-swappable module that fits into a microSD slot. The FPGA is connected to the microSD interface pins, allowing developers to configure the C0-microSD to work as an SD-compatible device, accessed from a host computer or host embedded system via the 4-wire SD protocol or via the SD-over-SPI protocol. By taking advantage of the iCE40’s functionality for dynamic reconfiguration of the FPGA with multiple alternative images, the Signaloid C0-microSD SoM implements two key features that ease development. First, we provide a pre-built bootloader configuration as a default design in the FPGA, that lets developers use the SD interface to load their own custom FPGA bitstreams. Second, the bootloader also allows developers to switch between custom FPGA bitstreams and a pre-loaded RISC-V system-on-chip (SoC); the RISC-V SoC we provide implements a subset of Signaloid’s uncertainty-tracking technology and  can load programs from the flash built into the SoM.
 
-| ![C0-microSD pinout](./assets/images/signaloid-external-illustration-C0-microSD-pinout-diagram-horizontal-withCR.png) |
+| ![C0-microSD pinout](/assets/images/signaloid-external-illustration-C0-microSD-pinout-diagram-horizontal-withCR.png) |
 |:--:|
 | **Figure 1:** C0-microSD pinout diagram. |
 
@@ -27,7 +27,7 @@ The Signaloid C0-microSD has two main use cases: You can either **(1) use it as 
 
 You can use it to prototype your designs on a breadboard using a microSD breakout board or integrate it into your new PCB designs by adding a dedicated microSD slot. You can even plug the Signaloid C0-microSD into an existing platform that supports microSD cards (like the Bee Data Logger or the Adafruit Adalogger) and use it as a co-processor.
 
-| ![C0-microSD coin size comparison](./assets/images/signaloid-external-image-C0-microSD-size-comparison-withCR.png) | ![C0-microSD connected to SDDev](./assets/images/signaloid-external-image-C0-microSD-connected-to-an-SDDev-board-withCR.png) | ![C0-microSD connected to SDDev](./assets/images/ortho-renders/breakout-board/signaloid-external-illustration-C0-microSD-populating-a-breadboard-using-a-microSD-breakout-board-withCR.png) |
+| ![C0-microSD coin size comparison](/assets/images/signaloid-external-image-C0-microSD-size-comparison-withCR.png) | ![C0-microSD connected to SDDev](/assets/images/signaloid-external-image-C0-microSD-connected-to-an-SDDev-board-withCR.png) | ![C0-microSD connected to SDDev](/assets/images/ortho-renders/breakout-board/signaloid-external-illustration-C0-microSD-populating-a-breadboard-using-a-microSD-breakout-board-withCR.png) |
 |:--:| :--:| :--:|
 | **Figure 2:** C0-microSD size comparison to US 1¢ coin. | **Figure 3:** C0-microSD connected to an SDDev board. | **Figure 4:** C0-microSD populating a breadboard using a microSD breakout board. |
 
@@ -47,7 +47,7 @@ We have published some open source projects in GitHub that showcase the capabili
 ## Why We Created the Signaloid C0-microSD System-On-Module
 We built the first prototype of the C0-microSD SoM in 2021 for use by a commercial partner with a use case around low-power data processing within an autonomous undersea vehicle (AUV) application and a subsea data sensor for monitoring offshore wind farm assets. The picture below shows the final AUV vehicle from that commercial engagement inside a testing tank (top half of picture) and the pressurized electronics container (bottom half of picure). You can see the old version of Signaloid’s logo (“S.“) on a banner inside the tank.
 
-| ![C0-microSD in AUV](./assets/images/signaloid-external-image-C0-microSD-within-the-autonomous-undersea-vehicle-withCR.png) |
+| ![C0-microSD in AUV](/assets/images/signaloid-external-image-C0-microSD-within-the-autonomous-undersea-vehicle-withCR.png) |
 |:--:|
 | **Figure 5:** The C0-microSD within the autonomous undersea vehicle (AUV). |
 
@@ -60,7 +60,7 @@ Using open-source [tools we provide on GitHub](https://github.com/signaloid/C0-m
 
 When you switch the Signaloid C0-microSD SoM to **Signaloid SoC** mode, the green LED will now be lit. The device will still appear to your host PC as an unformatted 20MB storage device, but the Signaloid SoC will be loaded. You can use the open-source [libraries we provide on GitHub](https://github.com/signaloid/C0-microSD-utilities/) to create applications that interface with the Signaloid SoC via the SD interface. You can find more details on how to communicate with the  C0-microSD SoM while in Signaloid SoC mode in the [communication scheme section](/hardware-overview/signaloid-soc/communication-scheme).
 
-| <img style=" width: 300px" src="./assets/images/ortho-renders/normal_size/signaloid-external-illustration-C0-microSD-in-Bootloader-mode-withCR.png"> | <img style=" width: 300px" src="./assets/images/ortho-renders/normal_size/signaloid-external-illustration-C0-microSD-in-Signaloid-SoC-mode-withCR.png"> |
+| <img style=" width: 300px" src="/assets/images/ortho-renders/normal_size/signaloid-external-illustration-C0-microSD-in-Bootloader-mode-withCR.png"> | <img style=" width: 300px" src="/assets/images/ortho-renders/normal_size/signaloid-external-illustration-C0-microSD-in-Signaloid-SoC-mode-withCR.png"> |
 |:--:| :--:| 
 | **Figure 6:** C0-microSD in **Bootloader mode**. | **Figure 7:** C0-microSD in **Signaloid SoC mode**. |
 

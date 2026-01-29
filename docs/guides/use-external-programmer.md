@@ -36,7 +36,7 @@ You can flash the C0-microSD on-board SPI flash chip using an external programme
 
 3. Connect a power supply of `3.3V` to the C0-microSD, make sure that the ground pins of the power supply and the `Tigard` board are tied together (Figure 1).
 
-    | <img src="/assets/images/diagrams/C0-uSD-tigard-connection.png"> |
+    | <img src="/assets/images/diagrams/signaloid-external-illustration-Tigard-connection-diagram-withCR.png"> |
     |:--:|
     | **Figure 1:** Tigard connection diagram using the pads located at the bottom layer of the C0-microSD. |
 

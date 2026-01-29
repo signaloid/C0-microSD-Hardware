@@ -16,7 +16,7 @@ The Signaloid C0-microSD comes with a built-in version of Signaloid’s C0 RISC-
 <div style="max-width: 420px; margin-left: auto; margin-right: auto; margin-top: 16px">
     <table style = "text-align: center;">
     <tr>
-        <td><img src="/assets/images/macbook-animations/inserted-green-led.png" alt="Signaloid SoC in Macbook"/></td>
+        <td><img src="/docs/assets/images/macbook-animations/signaloid-external-illustration-C0-microSD-inserted-Signaloid-SoC-mode-withCR.png" alt="Signaloid SoC in Macbook"/></td>
     </tr>
     <tr>
         <td><b>Figure 1:</b> C0-microSD on Signaloid SoC mode used as a co-processor.</td>

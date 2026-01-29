@@ -8,7 +8,7 @@ nav_order: 4
 # The SD-Dev carrier board
 The Signaloid SD-Dev is a compact carrier board and development system designed for testing and characterizing the Signaloid C0-microSD.
 
-| ![SD-Dev port](/docs/assets/images/signaloid-external-illustration-SD-Dev-port-diagram-withCR.png) |
+| ![SD-Dev port](/assets/images/signaloid-external-illustration-SD-Dev-port-diagram-withCR.png) |
 |:--:|
 | **Figure 1:** SD-Dev port diagram. |
 

@@ -8,7 +8,7 @@ nav_order: 1
 ---
 
 # C0-microSD Pinout
-![C0-microSD pinout](/docs/assets/images/signaloid-external-illustration-C0-microSD-pinout-diagram-horizontal-withCR.png)
+![C0-microSD pinout](/assets/images/signaloid-external-illustration-C0-microSD-pinout-diagram-horizontal-withCR.png)
 
 ## Detailed pin description
 

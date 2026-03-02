@@ -7,14 +7,15 @@ body:
     attributes:
       value: |
         ### Thank you for reporting a bug! 
-        To help us resolve this as quickly as possible, please provide as much detail as you can. Before submitting, please ensure you are using the latest version of our tools.
+        To help us resolve this as quickly as possible, please provide as much detail as you can. 
+        Before submitting, please ensure you are using the latest version of our tools.
 
   - type: textarea
     id: what-happened
     attributes:
       label: "What happened?"
       description: "A clear and concise description of the bug."
-      placeholder: "I expected the SCDP to return a specific distribution, but instead it..."
+      placeholder: "e.g., I expected the Signaloid Cloud Developer Platform (SCDP) to return a specific distribution, but instead it..."
     validations:
       required: true
 
@@ -22,7 +23,7 @@ body:
     id: reproduction-steps
     attributes:
       label: "Steps to Reproduce"
-      description: "How can we make this happen again? Code snippets are highly encouraged."
+      description: "How can we make this happen again? You can provide a list of steps, specific inputs, or a relevant code snippet."
       placeholder: |
         1. Run 'signaloid-cli load...'
         2. Set parameters to...
@@ -38,8 +39,9 @@ body:
       options:
         - Signaloid Cloud Developer Platform (Browser)
         - Signaloid CLI / Local Execution
-        - FPGA / Hardware Target
+        - Signaloid Compute Modules (e.g, C0-microSD)
         - Documentation / Website
+        - Other
     validations:
       required: true
 
@@ -74,6 +76,6 @@ body:
     id: visual-evidence
     attributes:
       label: "Screenshots or Diagrams"
-      description: "Drag and drop images here (especially helpful for SCDP UI bugs or plots)."
+      description: "Drag and drop images here."
     validations:
       required: false

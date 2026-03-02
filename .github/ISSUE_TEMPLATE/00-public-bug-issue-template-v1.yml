@@ -1,0 +1,79 @@
+name: "Bug Report"
+description: "File a structured report to help us reproduce and fix an issue."
+title: "[Bug]: "
+type: "bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thank you for reporting a bug! 
+        To help us resolve this as quickly as possible, please provide as much detail as you can. Before submitting, please ensure you are using the latest version of our tools.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened?"
+      description: "A clear and concise description of the bug."
+      placeholder: "I expected the SCDP to return a specific distribution, but instead it..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "How can we make this happen again? Code snippets are highly encouraged."
+      placeholder: |
+        1. Run 'signaloid-cli load...'
+        2. Set parameters to...
+        3. See error...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Where did you encounter the issue?"
+      options:
+        - Signaloid Cloud Developer Platform (Browser)
+        - Signaloid CLI / Local Execution
+        - FPGA / Hardware Target
+        - Documentation / Website
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: "Version / Commit Hash"
+      description: "Which version of the Signaloid toolchain or API are you using?"
+      placeholder: "e.g., v2.1.0 or commit a1b2c3d"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating System"
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other (Cloud Platform)
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant log output or Trace"
+      description: "Please paste any compiler errors, CLI output, or console logs here."
+      render: shell
+      placeholder: "Paste logs here..."
+
+  - type: textarea
+    id: visual-evidence
+    attributes:
+      label: "Screenshots or Diagrams"
+      description: "Drag and drop images here (especially helpful for SCDP UI bugs or plots)."
+    validations:
+      required: false

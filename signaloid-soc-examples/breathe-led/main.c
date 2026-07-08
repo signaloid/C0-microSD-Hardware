@@ -22,7 +22,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "C0microSDConstants.h"
+#include "C0microSD/Constants.h"
+#include "C0SoCStatus.h"
 
 enum
 {
@@ -31,7 +32,7 @@ enum
 
 /**
  *	@brief 	Turn on the on-board status LED of the Signaloid SoC using PWM
- * 
+ *
  *	@param brightness:	uint8_t brightness value (0 - 255)
  *	@param iterate:		Iterate same PWM package multiple times.
  */
@@ -59,7 +60,7 @@ main(void)
 {
 	uint8_t brightness;
 	while (1)
-	{		
+	{
 		/*
 		 *	Fade in LED
 		 */

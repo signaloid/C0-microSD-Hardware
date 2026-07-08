@@ -28,8 +28,8 @@
 #include <stdbool.h>
 #include <errno.h>
 
-#include "C0microSDConstants.h"
-#include "C0microSDHostUtils.h"
+#include "C0microSD/Constants.h"
+#include "C0microSD/HostUtils.h"
 
 enum
 {
@@ -43,7 +43,7 @@ enum
 enum
 {
 	kReturnSuccess			= 0,
-	kReturnError			= 1,	
+	kReturnError			= 1,
 };
 
 /**
@@ -93,7 +93,7 @@ calculateDataFP(char *  device, uint32_t command, float *  readBuffer)
 			break;
 		}
 		else if (deviceStatus == kSignaloidSoCStatusInvalidCommand)
-		{	
+		{
 			printf("ERROR: Device returned 'Unknown CMD'\n");
 			break;
 		}

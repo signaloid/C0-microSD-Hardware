@@ -21,7 +21,7 @@
 #
 
 CC			= gcc
-TOOLKIT_LIB		= ../../../submodules/C0-microSD-utilities/src/c/lib/*
+TOOLKIT_LIB		= ../../../submodules/C0-microSD-utilities/src/c/lib/C0microSD/*
 TOOLKIT_INCLUDE		= ../../../submodules/C0-microSD-utilities/src/c/include/
 INCLUDES		= -I$(TOOLKIT_INCLUDE)
 

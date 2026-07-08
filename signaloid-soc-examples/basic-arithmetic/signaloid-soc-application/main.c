@@ -22,7 +22,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "C0microSDConstants.h"
+#include "C0microSD/Constants.h"
+#include "C0SoCStatus.h"
 
 enum
 {
@@ -62,49 +63,49 @@ main(void)
 		switch (*mmioCommand)
 		{
 			case kCalculateAddition:
-				/* 
+				/*
 				 *	Get source data from source buffer
 				 */
 				sourceValueA = mmioReadBuf[0];
 				sourceValueB = mmioReadBuf[1];
-				/* 
+				/*
 				 *	Calculate addition of source values
 				 */
 				calculatedValue = sourceValueA + sourceValueB;
 				mmioWriteBuf[0] = calculatedValue;
-				/* 
+				/*
 				 *	Inform host about successful calculation
 				 */
 				*mmioStatus = kSignaloidSoCStatusDone;
 				break;
 			case kCalculateSubtraction:
-				/* 
+				/*
 				 *	Get source data from source buffer
 				 */
 				sourceValueA = mmioReadBuf[0];
 				sourceValueB = mmioReadBuf[1];
-				/* 
+				/*
 				 *	Calculate subtraction of source values
 				 */
 				calculatedValue = sourceValueA - sourceValueB;
 				mmioWriteBuf[0] = calculatedValue;
-				/* 
+				/*
 				 *	Inform host about successful calculation
 				 */
 				*mmioStatus = kSignaloidSoCStatusDone;
 				break;
 			case kCalculateMultiplication:
-				/* 
+				/*
 				 *	Get source data from source buffer
 				 */
 				sourceValueA = mmioReadBuf[0];
 				sourceValueB = mmioReadBuf[1];
-				/* 
+				/*
 				 *	Calculate multiplication of source values
 				 */
 				calculatedValue = sourceValueA * sourceValueB;
 				mmioWriteBuf[0] = calculatedValue;
-				/* 
+				/*
 				 *	Inform host about successful calculation
 				 */
 				*mmioStatus = kSignaloidSoCStatusDone;
@@ -112,13 +113,13 @@ main(void)
 			case kCalculateDivision:
 				sourceValueA = mmioReadBuf[0];
 				sourceValueB = mmioReadBuf[1];
-				
-				/* 
+
+				/*
 				 *	Calculate division of source values
 				 */
 				calculatedValue = sourceValueA / sourceValueB;
 				mmioWriteBuf[0] = calculatedValue;
-				/* 
+				/*
 				 *	Inform host about successful calculation
 				 */
 				*mmioStatus = kSignaloidSoCStatusDone;

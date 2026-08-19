@@ -59,7 +59,7 @@ To do that:
 	```
 3. Reboot
 4. Connect your SD-Dev to your host machine using the `PWR+D` USB-C port.
-5. Access the serial port from your host machine using tools like `screen` on Linux/Mac, or `minicom` on Windows.
+5. Access the serial port from your host machine using tools like `screen` on Linux/Mac, or `PuTTY` on Windows.
 
 At this point your Raspberry Pi will create a `/dev/ttyGS0` serial port, which you can read from and write to from both the Raspberry Pi and the host machine.
 

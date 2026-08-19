@@ -43,7 +43,7 @@ You can flash the C0-microSD on-board SPI flash chip using an external programme
 4. Use the `iceprog` tool from the `IceStorm` suite to flash a new bitstream to the device. Assuming your bitstream is named `c0-microsd.bin` use the following command and wait for the flashing process to finish:
 
     ```
-    iceprog -I -p B c0-microsd.bin
+    iceprog -I B -p c0-microsd.bin
 
     init..
     cdone: high
